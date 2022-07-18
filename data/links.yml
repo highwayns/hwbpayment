@@ -2,13 +2,13 @@
 - group: User
   items:
     - title: user register
-      url: /user/user_register
+      url: /user/input_infor
       icon: fab fa-reddit
     - title: input money
-      url: /user/input_money
+      url: /user/update_infor
       icon: fab fa-facebook
     - title: output money
-      url: /user/input_money
+      url: /user/upload_certificate
       icon: fab fa-facebook
     - title: transacttion
       url: /user/transacttion
@@ -41,7 +41,7 @@
 - group: System Manager
   items:
     - title: Modeler
-      url: /system_manager/Modeler
+      url: /system_manager/modeler
       icon: fab fa-github
     - title: Process_list
       url: /system_manager/process_list

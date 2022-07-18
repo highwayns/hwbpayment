@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+    <meta charset="utf-8">
+    {{- partial "seo_schema" . -}}
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    {{- partial "head_.html" . -}}
+    </head>
+    <body class="text-center">
+        {{- partial "top.html" . -}}
+        <!--Start Container-->
+    <div id="main" class="container-fluid">
+        {{- partial "menu.html" . -}}
+		<!--Start Content-->
+		<div id="content" class="col-xs-12 col-sm-10">
+            {{- block "main" . }}{{- end }}
+		</div>
+		<!--End Content-->
+	</div>
+</div>
+
+<!--End Container-->
+        {{- partial "js_.html" . -}}
+    </body>
+</html>

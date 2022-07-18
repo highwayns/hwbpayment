@@ -7,19 +7,3 @@ theme = "startpage"
   name = "Google"
   activated = true
   url = "https://www.google.com/search"
-
-[[params.searchEngines]]
-  name = "DuckDuckGo"
-  activated = true
-  url = "https://duckduckgo.com/"
-
-[[params.searchEngines]]
-  name = "Bing"
-  activated = true
-  url = "https://www.bing.com/search"
-
-[[params.searchEngines]]
-  name = "Baidu"
-  activated = true
-  url = "https://baidu.com/"
-  searchkey = "kw"
