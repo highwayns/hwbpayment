@@ -34,20 +34,22 @@
 						{{range $index, $element := .Params.datalist}}
 						<div class="form-group">
 							<label>{{$element}}</label>
-							{{if eq $element "option"}} 
-							<select id="{{$element}}" name="{{$element}}" class="form-control">
-								<option value="事假">事假</option>
-								<option value="病假">病假</option>
-								<option value="年假">年假</option>
-								<option value="丧假">丧假</option>
-								<option value="产假">产假</option>
-							</select>
-							{{else if eq $element "datetime"}} 
-							<input id="{{$element}}" class="form-control" name="{{$element}}" placeholder="{{$element}}"/><span class="fa fa-calendar txt-danger form-control-feedback"></span>
-							{{else}} 
-							<textarea id="{{$element}}" class="form-control" name="{{$element}}" rows="3"></textarea>
+							{{range $index2, $element2 := $.Params.datatypelist}}
+								{{if and (eq $index $index2) (eq $element2 "option")}} 
+									<select id="{{$element}}" name="{{$element}}" class="form-control">
+										<option value="事假">事假</option>
+										<option value="病假">病假</option>
+										<option value="年假">年假</option>
+										<option value="丧假">丧假</option>
+										<option value="产假">产假</option>
+									</select>
+									{{else if and (eq $index $index2) (eq $element2 "datatime")}} 
+									<input id="{{$element}}" class="form-control" name="{{$element}}" placeholder="{{$element}}"/><span class="fa fa-calendar txt-danger form-control-feedback"></span>
+									{{else if eq $index $index2}} 
+									<textarea id="{{$element}}" class="form-control" name="{{$element}}" rows="3"></textarea>
+								{{end}}
 							{{end}}
-						</div>
+							</div>
 						{{end}}
 
 						{{range $index, $element := .Params.buttonlist}}
