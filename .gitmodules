@@ -4,6 +4,3 @@
 [submodule "themes/startpage"]
 	path = themes/startpage
 	url = https://github.com/spech66/bootstrap-bp-hugo-startpage.git
-[submodule "themes/learn"]
-	path = themes/learn
-	url = https://github.com/matcornic/hugo-theme-learn.git
