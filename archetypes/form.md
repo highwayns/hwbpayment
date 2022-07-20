@@ -6,8 +6,13 @@ type: activiti
 layout: form
 user: user
 datalist: []
+datanamelist: []
+datatextlist: []
 datatypelist: []
-buttonlist: [Confirm]
+dataoptionlist: []
+buttonlist: ["application","reset"]
+buttonidlist: ["btn",""]
+buttontypelist: ["button","reset"]
 ---
 
 ** create a form to input data **

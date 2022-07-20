@@ -13,3 +13,9 @@
     - title: system manager application
       url: /login/system_manager_login
       icon: fab fa-facebook
+    - title: development guid
+      url: /post/goisforlovers
+      icon: fab fa-facebook
+    - title: About us
+      url: /company/about
+      icon: fab fa-facebook

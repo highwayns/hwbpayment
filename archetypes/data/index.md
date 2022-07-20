@@ -7,7 +7,11 @@ layout: list
 user: user
 datalist: []
 datatypelist: []
+dataformatlist: []
 buttonlist: []
+testdatalist: []
+columnidlist: []
+identifiers: []
 ---
 
 ** create a form to list data **

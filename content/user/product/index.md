@@ -5,9 +5,13 @@ draft: true
 type: activiti
 layout: list
 user: user
-datalist: []
+datalist: ["ID","Name","Category","Unit","Price","comment"]
 datatypelist: []
+dataformatlist: []
 buttonlist: []
+testdatalist: []
+columnidlist: []
+identifiers: []
 ---
 
 ** create a form to list data **
