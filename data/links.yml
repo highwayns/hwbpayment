@@ -1,60 +1,15 @@
 ---
-- group: User
+- group: Application
   items:
-    - title: user register
-      url: /user/input_infor
+    - title: user application
+      url: /login/user_login
       icon: fab fa-reddit
-    - title: input money
-      url: /user/update_infor
+    - title: manager application
+      url: /login/manager_login
       icon: fab fa-facebook
-    - title: output money
-      url: /user/upload_certificate
+    - title: senior manager application
+      url: /login/senior_manager_login
       icon: fab fa-facebook
-    - title: transacttion
-      url: /user/transacttion
+    - title: system manager application
+      url: /login/system_manager_login
       icon: fab fa-facebook
-    - title: refund
-      url: /user/refund
-      icon: fab fa-facebook
-- group: Manager
-  items:
-    - title: user register
-      url: /manager/user_register
-      icon: fab fa-github
-    - title: input money
-      url: /manager/input_money
-      icon: fab fa-github      
-    - title: output moeny
-      url: /manager/output_money
-      icon: fab fa-github
-- group: Senior Manager
-  items:
-    - title: user register
-      url: /senior_manager/user_register
-      icon: fab fa-github
-    - title: input money
-      url: /senior_manager/input_money
-      icon: fab fa-github      
-    - title: output moeny
-      url: /senior_manager/output_money
-      icon: fab fa-github
-- group: System Manager
-  items:
-    - title: Modeler
-      url: /system_manager/modeler
-      icon: fab fa-github
-    - title: Process_list
-      url: /system_manager/process_list
-      icon: fab fa-github      
-    - title: user
-      url: /system_manager/user
-      icon: fab fa-github
-    - title: role
-      url: /system_manager/role
-      icon: fab fa-github
-    - title: user role
-      url: /system_manager/user_role
-      icon: fab fa-github
-    - title: setting
-      url: /system_manager/setting
-      icon: fab fa-github

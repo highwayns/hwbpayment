@@ -2,13 +2,37 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-layout: activiti
+type: activiti
+layout: list
+user: user
+datalist: []
+datatypelist: []
+buttonlist: []
 ---
 
-**Insert Lead paragraph here.**
+** create a form to list data **
 
-## data list
-
-{{ range first 10 ( where .Site.RegularPages "Type" "cool" ) }}
-* {{ .Title }}
-{{ end }}
+## user
+. user
+. manager
+. senior_manager
+. system_manager
+## datalist
+input the column name of your data
+## datatypelist
+input the column dataType of your data
+. int
+. float
+. string
+. boolean
+. date
+. datetime
+## buttonlist
+input the button you want to operate the data
+. create
+. update
+. confirm
+. cancel
+. delete
+. linkto
+. custom operator

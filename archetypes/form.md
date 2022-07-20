@@ -1,11 +1,35 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Input_infor"
+date: 2022-07-18T11:57:28+09:00
 draft: true
-layout: activiti
+type: activiti
+layout: form
+user: user
+datalist: []
+datatypelist: []
+buttonlist: [Confirm]
 ---
 
-**Insert Lead paragraph here.**
+** create a form to input data **
 
-## new data
-
+## user
+. user
+. manager
+. senior_manager
+. system_manager
+## datalist
+input the column name of your data
+## datatypelist
+input the column dataType of your data
+. int
+. float
+. string
+. boolean
+. date
+. datetime
+## buttonlist
+input the button you want to operate the data
+. create
+. update
+. confirm
+. cancel
