@@ -36,14 +36,26 @@
 					<table id="grid-data" class="table table-condensed table-hover table-striped">
 						<thead>
 							<tr>
-								{{range .Params.datalist}}
-								<th data-column-id="id" data-formatter="run"
-									data-identifier="true" data-type="numeric">{{.}}</th>
+								{{range $index, $element := .Params.datalist}}
+								<th data-column-id="{{$element.id}}" data-formatter="{{$element.formatter}}"
+									data-identifier="{{$element.identifier}}" data-type="{{$element.type}}">{{$element.name}}</th>
 								{{end}}
 								<th data-column-id="commands" data-formatter="commands"
 									data-sortable="false">operation</th>
 							</tr>
 						</thead>
+						<tbody>
+							<tr>
+								{{range $index, $element := .Params.testdatalist}}
+								<td>{{$element}}</td>
+								{{end}}
+								<td>
+									{{range $index, $element := $.Params.buttonlist}}										
+										<a href="{{$element.url}}" class="btn btn-primary">{{$element.name}}</a>
+									{{end}}	
+								</td>
+							</tr>
+						</tbody>
 					</table>
 				</div></div>
 		</div>

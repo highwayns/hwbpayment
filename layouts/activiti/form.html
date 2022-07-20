@@ -32,28 +32,26 @@
 				<div class="box-content">
 					<form role="form" action="startleave" method="post">
 						{{range $index, $element := .Params.datalist}}
-						<div class="form-group">
-							<label>{{$element}}</label>
-							{{range $index2, $element2 := $.Params.datatypelist}}
-								{{if and (eq $index $index2) (eq $element2 "option")}} 
-									<select id="{{$element}}" name="{{$element}}" class="form-control">
-										<option value="事假">事假</option>
-										<option value="病假">病假</option>
-										<option value="年假">年假</option>
-										<option value="丧假">丧假</option>
-										<option value="产假">产假</option>
+							<div class="form-group">
+								<label>{{$element.name}}</label>
+								{{if eq $element.type "option"}} 
+									<select id="{{$element.id}}" name="{{$element.name}}" class="form-control">
+										{{range $index2, $element2 := $element.option}}
+											<option value="{{$element2.value}}">{{$element2.text}}</option>
+										{{end}}
 									</select>
-									{{else if and (eq $index $index2) (eq $element2 "datatime")}} 
-									<input id="{{$element}}" class="form-control" name="{{$element}}" placeholder="{{$element}}"/><span class="fa fa-calendar txt-danger form-control-feedback"></span>
-									{{else if eq $index $index2}} 
-									<textarea id="{{$element}}" class="form-control" name="{{$element}}" rows="3"></textarea>
+								{{else if eq $element.type "datatime"}} 
+									<input id="{{$element.id}}" class="form-control" name="{{$element.name}}" placeholder="{{$element.text}}"/><span class="fa fa-calendar txt-danger form-control-feedback"></span>
+								{{else if eq $element.type "textarea"}} 
+									<textarea id="{{$element.id}}" class="form-control" name="{{$element.name}}" rows="3"></textarea>
+								{{else}} 
+									<input id="{{$element.id}}" class="form-control" name="{{$element.name}}"/>
 								{{end}}
-							{{end}}
 							</div>
 						{{end}}
 
 						{{range $index, $element := .Params.buttonlist}}
-						<button id="{{$element}}" type="{{$element}}" class="btn btn-primary">{{$element}}</button>
+							<a href="{{$element.url}}" class="btn btn-primary">{{$element.name}}</a>
 						{{end}}
 						
 					</form>

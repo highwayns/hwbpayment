@@ -1,10 +1,11 @@
 ---
-title: "Login"
-date: 2022-07-17T14:49:18+09:00
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
 draft: true
 type: common
 layout: login
 redirect_url: /user/ 
 ---
 
-# create a login form
+## create a login form
+ you need to change the redirect_url for your own app
