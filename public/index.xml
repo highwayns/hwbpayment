@@ -2,16 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Highway Bitcoin</title>
-    <link>http://example.org/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Highway Bitcoin</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Jul 2022 11:57:28 +0900</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Product</title>
+      <link>http://localhost:1313/user/product/</link>
+      <pubDate>Wed, 20 Jul 2022 13:26:35 +0900</pubDate>
+      
+      <guid>http://localhost:1313/user/product/</guid>
+      <description>** create a form to list data **
+user . user . manager . senior_manager . system_manager
+datalist input the column name of your data
+datatypelist input the column dataType of your data . int . float . string . boolean . date . datetime
+buttonlist input the button you want to operate the data . create . update . confirm . cancel . delete . linkto . custom operator</description>
+    </item>
+    
+    <item>
+      <title>Input_infor</title>
+      <link>http://localhost:1313/user/input_infor/</link>
+      <pubDate>Mon, 18 Jul 2022 11:57:28 +0900</pubDate>
+      
+      <guid>http://localhost:1313/user/input_infor/</guid>
+      <description>Insert Lead paragraph here.
+new data </description>
+    </item>
+    
+    <item>
+      <title>Update_infor</title>
+      <link>http://localhost:1313/user/update_infor/</link>
+      <pubDate>Mon, 18 Jul 2022 11:57:28 +0900</pubDate>
+      
+      <guid>http://localhost:1313/user/update_infor/</guid>
+      <description>Insert Lead paragraph here.
+new data </description>
+    </item>
+    
     <item>
       <title></title>
-      <link>http://example.org/</link>
+      <link>http://localhost:1313/</link>
       <pubDate>Sun, 17 Jul 2022 14:49:24 +0900</pubDate>
       
-      <guid>http://example.org/</guid>
+      <guid>http://localhost:1313/</guid>
       <description></description>
     </item>
     
