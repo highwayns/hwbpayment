@@ -50,14 +50,18 @@
 								<td>{{$element}}</td>
 								{{end}}
 								<td>
-									{{range $index, $element := $.Params.buttonlist}}										
+									{{range $index, $element := $.Params.rowbuttonlist}}										
 										<a href="{{$element.url}}" class="btn btn-primary">{{$element.name}}</a>
 									{{end}}	
 								</td>
 							</tr>
 						</tbody>
 					</table>
-				</div></div>
+					{{range $index, $element := $.Params.buttonlist}}										
+						<a href="{{$element.url}}" class="btn btn-primary">{{$element.name}}</a>
+					{{end}}	
+				</div>
+			</div>
 		</div>
 		</div>
 		</div>
