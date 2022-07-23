@@ -1,7 +1,8 @@
 +++
 title = "About hwbpayment"
 date = "2022-07-20"
-menu = "main"
+type = "company"
+layout = "about"
 +++
 
 hwbpayment is the a very useful tools set for web3.0.

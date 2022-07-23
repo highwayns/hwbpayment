@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Highway Bitcoin</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Highway Bitcoin</description>
+    <title>Managers on Highway Bitcoin</title>
+    <link>http://localhost:1313/manager/</link>
+    <description>Recent content in Managers on Highway Bitcoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Jul 2022 14:49:18 +0900</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jul 2022 13:26:35 +0900</lastBuildDate><atom:link href="http://localhost:1313/manager/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Check user infor</title>
       <link>http://localhost:1313/manager/user_register/check_user_infor/</link>
@@ -17,24 +17,6 @@
 user . user . manager . senior_manager . system_manager
 datalist input the column name of your data,sample data like this
 [ {id: &amp;quot;id&amp;quot;,name: &amp;quot;ID&amp;quot;,formatter: &amp;quot;run&amp;quot;,identifier: &amp;quot;true&amp;quot;,type: &amp;quot;numeric&amp;quot;}, {id: &amp;quot;name&amp;quot;,name: &amp;quot;Name&amp;quot;,formatter: &amp;quot;&amp;quot;,identifier: &amp;quot;&amp;quot;,type: &amp;quot;&amp;quot;}, {id: &amp;quot;category&amp;quot;,name: &amp;quot;Category&amp;quot;,formatter: &amp;quot;&amp;quot;,identifier: &amp;quot;&amp;quot;,type: &amp;quot;&amp;quot;}, {id: &amp;quot;unit&amp;quot;,name: &amp;quot;Unit&amp;quot;,formatter: &amp;quot;&amp;quot;,identifier: &amp;quot;&amp;quot;,type: &amp;quot;&amp;quot;}, {id: &amp;quot;price&amp;quot;,name: &amp;quot;Price&amp;quot;,formatter: &amp;quot;run&amp;quot;,identifier: &amp;quot;true&amp;quot;,type: &amp;quot;numeric&amp;quot;}, {id: &amp;quot;comment&amp;quot;,name: &amp;quot;Comment&amp;quot;,formatter: &amp;quot;&amp;quot;,identifier: &amp;quot;&amp;quot;,type: &amp;quot;&amp;quot;} ] rowbuttonlist input the button you want to operate the data,sample data like this</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/</link>
-      <pubDate>Sun, 17 Jul 2022 14:49:24 +0900</pubDate>
-      
-      <guid>http://localhost:1313/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Login</title>
-      <link>http://localhost:1313/login/manager_login/</link>
-      <pubDate>Sun, 17 Jul 2022 14:49:18 +0900</pubDate>
-      
-      <guid>http://localhost:1313/login/manager_login/</guid>
-      <description>create a login form </description>
     </item>
     
   </channel>

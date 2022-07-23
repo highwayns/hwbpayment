@@ -66,31 +66,32 @@
                     <i class="fa  fa-bell"></i>
                      <span class="hidden-xs">Manager</span>
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" style="display: block;">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">
                             <i class="fa fa-bars"></i>
-                            <span class="hidden-xs">请假待办</span>
+                            <span class="hidden-xs">User Register</span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="ajax-link" href="deptleaderaudit">部门领导审批</a></li>
-                            <li><a class="ajax-link" href="hraudit">人事审批</a></li>
-                            <li><a class="ajax-link" href="reportback">销假</a></li>
-                            <li><a class="ajax-link" href="modifyapply">调整申请</a></li>
+                            <li><a href="deptleaderaudit">check user infor</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">
                             <i class="fa fa-phone-square"></i>
-                            <span class="hidden-xs">采购待办</span>
+                            <span class="hidden-xs">input money</span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="ajax-link" href="purchasemanager">采购经理审批</a></li>
-                            <li><a class="ajax-link" href="finance">财务审批</a></li>
-                            <li><a class="ajax-link" href="manager">总经理审批</a></li>
-                            <li><a class="ajax-link" href="pay">出纳付款</a></li>
-                            <li><a class="ajax-link" href="updateapply">调整申请</a></li>
-                            <li><a class="ajax-link" href="receiveitem">收货确认</a></li>
+                            <li><a href="purchasemanager">check company account</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <i class="fa fa-phone-square"></i>
+                            <span class="hidden-xs">output money</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="purchasemanager">check tranfer out</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -115,16 +116,16 @@
                     <i class="fa fa-cog"></i>
                     <span class="hidden-xs">system manager</span>
                 </a>
-                <ul class="dropdown-menu">
-                    <li><a class="ajax-link" href="/system_manager/user">user management</a></li>
-                    <li><a class="ajax-link" href="/system_manager/role">role management</a></li>
-                    <li><a class="ajax-link" href="/system_manager/user_role">right management</a></li>
+                <ul class="dropdown-menu" style="display: block;">
                     <li>
                         <a href="/system_manager/process_list" class="active ajax-link">
                             <i class="fa fa-dashboard"></i>
                             <span class="hidden-xs">workflow list</span>
                         </a>
                     </li>
+                    <li><a href="/system_manager/user">user management</a></li>
+                    <li><a href="/system_manager/role">role management</a></li>
+                    <li><a href="/system_manager/user_role">right management</a></li>
                 </ul>
             </li>
             {{ end }}

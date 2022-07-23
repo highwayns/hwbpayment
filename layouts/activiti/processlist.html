@@ -8,8 +8,9 @@
 						  <i class="fa fa-bars"></i>
 						</a>
 		<ol class="breadcrumb pull-left">
-			<li><a href="index">首页</a></li>
-			<li><a href="#">已部署的工作流</a></li>
+			<li><a href="/">Top</a></li>
+			<li><a href="#">{{.Params.user}}</a></li>
+			<li><a href="#">{{.Params.title}}</a></li>
 		</ol>
 	</div>
 </div>
@@ -19,7 +20,7 @@
 		<div class="box ui-draggable ui-droppable">
 			<div class="box-header">
 					<div class="box-name">
-						<i class="fa fa-coffee"></i> <span>上传工作流文件</span>
+						<i class="fa fa-coffee"></i> <span>workflow upload</span>
 					</div>
 					<div class="box-icons">
 						<a class="collapse-link"> <i class="fa fa-chevron-up"></i>
@@ -47,7 +48,7 @@
 		<div class="box ui-draggable ui-droppable">
 				<div class="box-header">
 					<div class="box-name">
-						<i class="fa fa-coffee"></i> <span>已部署的工作流</span>
+						<i class="fa fa-coffee"></i> <span>workflow list</span>
 					</div>
 					<div class="box-icons">
 						<a class="collapse-link"> <i class="fa fa-chevron-up"></i>
@@ -70,7 +71,7 @@
 									data-formatter="picname">diagramResourceName</th>
 								<th data-column-id="key">key</th>
 								<th data-column-id="commands" data-formatter="commands"
-									data-sortable="false">操作</th>
+									data-sortable="false">operation</th>
 							</tr>
 						</thead>
 					</table>

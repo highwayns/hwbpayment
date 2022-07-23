@@ -4,7 +4,7 @@ date: 2022-07-17T14:49:18+09:00
 draft: false
 type: common
 layout: login
-redirect_url: /manager/ 
+redirect_url: /manager/user_register/check_user_infor
 ---
 
 # create a login form
